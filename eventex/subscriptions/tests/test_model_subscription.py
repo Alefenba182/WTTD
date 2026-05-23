@@ -21,4 +21,4 @@ class SubscriptionModelTest(TestCase):
 
     def test_paid_default_to_False(self):
         """pagamento deve ser Falso"""
-        self.assertEquals(False, self.obj.paid)
+        self.assertEqual(False, self.obj.paid)

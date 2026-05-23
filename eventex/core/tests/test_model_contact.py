@@ -46,10 +46,10 @@ class ContactManagerTest(TestCase):
     def test_emails(self):
         qs = Contact.objects.emails()
         expected = ['uchiha-itachi02@hotmail.com']
-        self.assertQuerysetEqual(qs, expected, lambda o: o.value)
+        self.assertQuerySetEqual(qs, expected, lambda o: o.value)
 
     
     def test_phones(self):
         qs = Contact.objects.phones()
         expected = ['12-123456789']
-        self.assertQuerysetEqual(qs, expected, lambda o: o.value)
+        self.assertQuerySetEqual(qs, expected, lambda o: o.value)

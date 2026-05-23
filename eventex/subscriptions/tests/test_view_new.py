@@ -53,7 +53,7 @@ class SubscriptionsNewPost(TestCase):
         
 
     def test_send_subscribe_emails(self):
-        self.assertEquals(1, len(mail.outbox))
+        self.assertEqual(1, len(mail.outbox))
 
     def test_save_subscription(self):
         self.assertTrue(Subscription.objects.exists())
